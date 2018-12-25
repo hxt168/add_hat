@@ -28,8 +28,9 @@ def add_hat_do(preimg):
 
     # 圣诞帽
     hats = []
-    for i in range(3):   #备选3顶帽子
+    for i in range(4):   #备选几顶帽子
         hats.append(cv2.imread('hat/hat%d.png' % i, -1))
+        #hats.append(cv2.imread('hat/cap4.png' , -1))
 
     for face in faces:  #一张头像内多张脸的话，则需要face循环.
         # 随机一顶帽子
